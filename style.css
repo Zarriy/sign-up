@@ -166,6 +166,7 @@ a {
     max-width: 60vw;
   }
   .container {
-    max-width: 68%;
+    max-width: 80%;
+    min-height: 80vh;
   }
 }
