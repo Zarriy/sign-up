@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.18/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.18/js/intlTelInput.min.js"></script>
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <div class="left">
+      <img src="../theodin.svg" width="100px" class="Odin">
+    <p class="para">This is not a real Online service! You know you need something like this in your life to 
+      help you realize your deepest dreams. Sign up now to get started.</p>
+    </div>
+    <div class="container">
+      <h1>Are You Ready?</h1>
+      <form class="form-container">
+        <div class="text-input-div">
+          <label for="firstName">Your Name<span>*</span></label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            minlength="3"
+            maxlength="28"
+            required
+          />
+        </div>
+        <div class="text-input-div">
+          <label for="lastName">Last Name<span>*</span></label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            minlength="3"
+            maxlength="28"
+            required
+          />
+        </div>
+        <div class="text-input-div">
+          <label for="email">Your Email<span>*</span></label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="text-input-div tel">
+          <label for="tel">Phone Number<span>*</span></label>
+          <div class="tel-input">
+            <input type="tel" name="tel" id="tel"  required />
+          </div>
+        </div>
+
+        <div class="text-input-div password password-relative">
+          <label for="password">Password<span>*</span></label>
+          <input
+            type="password"
+            minlength="8"
+            name="password"
+            id="password"
+            required
+          />
+          <span class="password-message"><span>
+        </div>
+        <div class="text-input-div password confirm-password-div">
+          <label for="confirm-password">Confirm Password<span>*</span></label>
+          <input
+            type="password"
+            name="confirm-password"
+            minlength="8"
+            id="confirm-password"
+            required
+          />
+        </div>
+        <div class="btn-div">
+        <button class="btn" type="submit">Sign Up</button>
+        </div>
+      </form>
+      <p>Already have an account? <a href="#">Login here</a></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
